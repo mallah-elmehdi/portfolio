@@ -3,264 +3,58 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <!-- Kute -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.1.2/kute.min.js" integrity="sha512-uTe+wUbchHcZHwvZwpVt4ve3FdUJPse9iC56mh6pZkxHccXx2vaSYyjlWV/Mv0NTcvGYkGZvCi1D/KZJ7qS2uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- css -->
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/animate.css">
-        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-        <title>Hello, world!</title>
-    </head>
-    <body class="font m-0 p-0 bg-gray position-relative">
-        <header>
-            <div class="container mb-3 d-flex justify-content-between align-items-center p-3">
-                <span class="fw-bold">El Mehdi</span>
-                <ul class="nav fade-md">
-                    <li class="nav-item">
-                        <button id="aboutMeBtn" class="nav-link btn rounded-pill">à propos</button>
-                    </li>
-                    <li class="nav-item">
-                        <button id="portfolioBtn" class="nav-link btn rounded-pill">portfolio</button>
-                    </li>
-                    <li class="nav-item">
-                        <button id="contactBtn" class="nav-link btn rounded-pill">contact</button>
-                    </li>
-                </ul>
-                <!-- <button class="btn btn-hover-2 p-3 shadow-btn rounded-circle position-relative btn-purple" id="list-btn">
-                    <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="menu-outline"></ion-icon>
-                </button> -->
-            </div>
-            <!-- <div class="pop-up bg-purple-light position-fixed w-100 vh-100 top-0 p-3 start-0 z-index-0" style="opacity: 0; display: none;">
-                <div class="position-relative">
-                    <button class="btn p-3 shadow-btn rounded-circle position-relative position-absolute top-0 end-0 bg-white" id="list-btn-x">
-                        <ion-icon class="top-50 fs-4 text-purple-dark start-50 translate-middle position-absolute" name="close-outline"></ion-icon>
-                    </button>
-                </div>
-                
-                <ul class="nav flex-column align-items-center justify-content-center h-100">
-                    <li class="nav-item mb-4">
-                        <button class="nav-link btn btn-lg text-dark rounded-pill">à propos</button>
-                    </li>
-                    <li class="nav-item mb-4">
-                        <button  class="nav-link btn btn-lg text-dark rounded-pill">portfolio</button>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- main content in header -->
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 fadeIn col-md-3 p-lg-0 p-md-0 p-3 order-md-1">
-                        <img src="./img/mehdi.png" alt="el mehdi" class="w-100 ">
-                    </div>
-                    <div class="col-lg-7 col-md-9 p-lg-0 p-3 order-md-0">
-                        <h1 class="display-2 m-0 fw-bold lh-sm movLeftEase">
-                            Salut! je suis un <span class="text-purple fw-bold">développeur web</span>
-                        </h1>
-                        <h2 class="fs-6 lh-lg text-dark my-4 movRightEase">
-                            Salut! je suis Mehdi un développeur web freelancer. J'aide les petites, moyennes et grandes entreprises à transformer leurs idées en applications Web de haute qualité...
-                        </h2>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button class="btn-hover btn-lg movUpEase rounded-pill ">contact</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <hr class="bg-transparent my-5">
-            <section id="aboutMe" class="px-3 py-5 bg-purple-dark">
-                <span class="text-white text-center fw-bold d-block mb-2">À propos</span>
-                <h3 class="text-center mb-3 text-purple-light fs-1 fw-bold">Mallah el Mehdi</h3>
-                <div class="container">
-                    <span class="text-white fs-6 lh-lg"> 
-                        <span>Je suis web designer et développeur web. J'ai réalisé de nombreux projets de développement Web au fil du temps.</span><br>
-                        <span>Je crois que je serai excellent pour vos projets et que ce sera peut-être une bonne relation avec vous.</span><br>
-                        <span>Si vous n'êtes pas prêt à démarrer le projet, n'hésitez pas à me contacter afin que nous puissions commencer à planifier votre prochain projet. Je vais vous guider à travers tout.</span><br><br>
-                    </span>
-                    <div class="row g-4">
-                        <!-- ------------------ -->
-                        <div class="col-lg-7 col-md-9 ms-0">
-                            <div class="card p-3 border-0 rounded-5 shadow-sm  ">
-                                <div class="card-title align-items-center d-flex">
-                                    <span class="position-relative p-3 bg-orange-light me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-5 text-orange start-50 translate-middle position-absolute" name="code-slash-outline"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-6 lh-lg">
-                                        Développement
-                                    </span>
-                                </div>
-                                <span class="lh-lg fs-7">
-                                    L'écriture d'un code propre et optimisé est nécessaire pour que nous puissions créer les applications Web les plus rapides et les plus fluides
-                                </span>
-                            </div>
-                        </div>
-                        <!-- ------------------ -->
-                        <div class="col-lg-7 col-md-9 mx-auto">
-                            <div class="card p-3 border-0 rounded-5 shadow-sm  ">
-                                <div class="card-title align-items-center d-flex">
-                                    <span class="position-relative p-3 bg-yellow-light me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-5 text-yellow start-50 translate-middle position-absolute" name="color-wand-outline"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-6 lh-lg">
-                                        Désign
-                                    </span>
-                                </div>
-                                <span class="lh-lg fs-7">
-                                    La préservation d'une méthode de conception de sites Web qui fonctionnent bien à la fois sur ordinateur et sur mobile sont réactifs est essentielle pour maintenir la confiance et l'engagement des utilisateurs.
-                                </span>
-                            </div>
-                        </div>
-                        <!-- ------------------ -->
-                        <div class="col-lg-7 col-md-9 ms-auto">
-                            <div class="card p-3 border-0 rounded-5 shadow-sm  ">
-                                <div class="card-title align-items-center d-flex">
-                                    <span class="position-relative p-3 bg-green-light me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-5 text-green start-50 translate-middle position-absolute" name="lock-closed-outline"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-6 lh-lg">
-                                        Sécurité
-                                    </span>
-                                </div>
-                                <span class="lh-lg fs-7">
-                                    Il est essentiel de garantir la sécurité de votre site Web ou de votre application Web, nous réalisons des applications web 100% sécurisée par les meilleures techniques de sécurité
-                                </span>
-                            </div>
-                        </div>
-                        <!-- ------------------ -->
-                    </div>
-                </div>
-            </section>
-            <section id="portfolio" class="px-3 py-5">
-                <span class="text-dark text-center fw-bold d-block mb-2">Portfolio</span>
-                <h3 class="text-center mb-5 text-purple fs-1 fw-bold">Mes Travaux</h3>
-                <div class="container">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-1.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
+        <title>El Mehdi Mallah | Portfolio | Home</title>
+      </head>
+    <body>
+      <div class="wave">
 
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-2.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-3.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-4.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-5.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-6.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <span class="fs-7 d-block text-center mb-2 fw-bold">Website.com</span>
-                            <img src="./img/website-7.png" class="w-100 rounded-5 shadow-sm hover" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section  id="contact" class="px-3 py-5 bg-purple-light">
-                <span class="text-dark text-center fw-bold d-block mb-2">Contact</span>
-                <h3 class="text-center mb-5 text-purple-dark fs-1 fw-bold">Mes Contacts</h3>
-                <div class="container">
-                    <div class="d-flex justify-content-center align-items-center flex-wrap">
-                     
-                        <a class="text-decoration-none me-2 mb-2" href="https://api.whatsapp.com/send?phone=+212698818214" target="_blank" rel="noopener noreferrer">
-                            <div class="card p-3 border-0 rounded-5">
-                                <div class="align-items-center d-flex">
-                                    <span class="position-relative bg-success p-3 me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="logo-whatsapp"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-5">
-                                        +212698818214
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a class="text-decoration-none me-2 mb-2" href="mailto:webmaster@example.com" target="_blank" rel="noopener noreferrer">
-                            <div class="card p-3 border-0 rounded-5">
-                                <div class="align-items-center d-flex">
-                                    <span class="position-relative bg-info p-3 me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="mail"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-5">
-                                        mallahelmehdi@gmail.com
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a class="text-decoration-none me-2 mb-2" href="https://www.instagram.com/mallah_el_mehdi/" target="_blank" rel="noopener noreferrer">
-                            <div class="card p-3 border-0 rounded-5">
-                                <div class="align-items-center d-flex">
-                                    <span class="position-relative bg-purple p-3 me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="logo-instagram"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-5">
-                                        @mallah_el_mehdi
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a class="text-decoration-none me-2 mb-2" href="http://m.me/mallahelmehdi" target="_blank" rel="noopener noreferrer">
-                            <div class="card p-3 border-0 rounded-5">
-                                <div class="align-items-center d-flex">
-                                    <span class="position-relative bg-primary p-3 me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="logo-facebook"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-5">
-                                        mallahelmehdi
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a class="text-decoration-none me-2 mb-2" href="https://github.com/mallah-elmehdi" target="_blank" rel="noopener noreferrer">
-                            <div class="card p-3 border-0 rounded-5">
-                                <div class="align-items-center d-flex">
-                                    <span class="position-relative bg-dark p-3 me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="logo-github"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-5">
-                                        mallah-elmehdi
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a class="text-decoration-none me-2 mb-2" href="https://www.linkedin.com/in/el-mehdi-mallah-4581781ab" target="_blank" rel="noopener noreferrer">
-                            <div class="card p-3 border-0 rounded-5">
-                                <div class="align-items-center d-flex">
-                                    <span class="position-relative bg-primary p-3 me-2 rounded-5">
-                                        <ion-icon class="top-50 fs-4 text-white start-50 translate-middle position-absolute" name="logo-linkedin"></ion-icon>
-                                    </span>
-                                    <span class="text-dark fw-bold fs-5">
-                                        mallah el mehdi
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script src="./jquery/jquery-3.5.1.min.js"></script>
-        <script src="./js/script.js"></script>
+        <svg id="visual" viewBox="0 0 800 600" width="100%"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+          <path id="wave-1" d="M349 0L345.5 14.3C342 28.7 335 57.3 327.2 85.8C319.3 114.3 310.7 142.7 303.5 171.2C296.3 199.7 290.7 228.3 292.3 257C294 285.7 303 314.3 311.3 343C319.7 371.7 327.3 400.3 316.8 428.8C306.3 457.3 277.7 485.7 281.5 514.2C285.3 542.7 321.7 571.3 339.8 585.7L358 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#fef6ef"></path>
+          <path id="wave-2" d="M236 0L229.7 14.3C223.3 28.7 210.7 57.3 201.8 85.8C193 114.3 188 142.7 200.3 171.2C212.7 199.7 242.3 228.3 245.8 257C249.3 285.7 226.7 314.3 217.2 343C207.7 371.7 211.3 400.3 219.2 428.8C227 457.3 239 485.7 236 514.2C233 542.7 215 571.3 206 585.7L197 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#ffe1c5"></path>
+          <path id="wave-3" d="M239 0L234 14.3C229 28.7 219 57.3 215.5 85.8C212 114.3 215 142.7 206.5 171.2C198 199.7 178 228.3 173.2 257C168.3 285.7 178.7 314.3 191.7 343C204.7 371.7 220.3 400.3 216.3 428.8C212.3 457.3 188.7 485.7 179 514.2C169.3 542.7 173.7 571.3 175.8 585.7L178 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#ffcc9d"></path>
+          <path id="wave-4" d="M147 0L142.3 14.3C137.7 28.7 128.3 57.3 125.2 85.8C122 114.3 125 142.7 131.7 171.2C138.3 199.7 148.7 228.3 142.8 257C137 285.7 115 314.3 104.8 343C94.7 371.7 96.3 400.3 101.8 428.8C107.3 457.3 116.7 485.7 126.8 514.2C137 542.7 148 571.3 153.5 585.7L159 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#fdb675"></path>
+          <path id="wave-5" d="M90 0L89.8 14.3C89.7 28.7 89.3 57.3 83.2 85.8C77 114.3 65 142.7 56.7 171.2C48.3 199.7 43.7 228.3 50.2 257C56.7 285.7 74.3 314.3 85.2 343C96 371.7 100 400.3 99.5 428.8C99 457.3 94 485.7 89 514.2C84 542.7 79 571.3 76.5 585.7L74 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#f9a04e"></path>
+          <!--  -->
+          <path id="wave-6" d="M267 0L275.3 14.3C283.7 28.7 300.3 57.3 303 85.8C305.7 114.3 294.3 142.7 303.2 171.2C312 199.7 341 228.3 356.5 257C372 285.7 374 314.3 370.3 343C366.7 371.7 357.3 400.3 345.7 428.8C334 457.3 320 485.7 323.3 514.2C326.7 542.7 347.3 571.3 357.7 585.7L368 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#fef6ef"></path>
+          <path id="wave-7" d="M283 0L270.2 14.3C257.3 28.7 231.7 57.3 229 85.8C226.3 114.3 246.7 142.7 250.3 171.2C254 199.7 241 228.3 246 257C251 285.7 274 314.3 282.2 343C290.3 371.7 283.7 400.3 284.2 428.8C284.7 457.3 292.3 485.7 281.5 514.2C270.7 542.7 241.3 571.3 226.7 585.7L212 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#ffe1c5"></path>
+          <path id="wave-8" d="M178 0L185.8 14.3C193.7 28.7 209.3 57.3 210.7 85.8C212 114.3 199 142.7 198.8 171.2C198.7 199.7 211.3 228.3 212.8 257C214.3 285.7 204.7 314.3 197.5 343C190.3 371.7 185.7 400.3 176.5 428.8C167.3 457.3 153.7 485.7 152.3 514.2C151 542.7 162 571.3 167.5 585.7L173 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#ffcc9d"></path>
+          <path id="wave-9" d="M91 0L92.7 14.3C94.3 28.7 97.7 57.3 106.8 85.8C116 114.3 131 142.7 130.7 171.2C130.3 199.7 114.7 228.3 113.2 257C111.7 285.7 124.3 314.3 136.2 343C148 371.7 159 400.3 164.2 428.8C169.3 457.3 168.7 485.7 159.8 514.2C151 542.7 134 571.3 125.5 585.7L117 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#fdb675"></path>
+          <path id="wave-10" d="M49 0L53.8 14.3C58.7 28.7 68.3 57.3 76.3 85.8C84.3 114.3 90.7 142.7 91.3 171.2C92 199.7 87 228.3 87.2 257C87.3 285.7 92.7 314.3 88 343C83.3 371.7 68.7 400.3 64.8 428.8C61 457.3 68 485.7 70.8 514.2C73.7 542.7 72.3 571.3 71.7 585.7L71 600L0 600L0 585.7C0 571.3 0 542.7 0 514.2C0 485.7 0 457.3 0 428.8C0 400.3 0 371.7 0 343C0 314.3 0 285.7 0 257C0 228.3 0 199.7 0 171.2C0 142.7 0 114.3 0 85.8C0 57.3 0 28.7 0 14.3L0 0Z" fill="#f9a04e"></path>
+        </svg>
+      </div>
+      <!-- header -->
+      <header class="section section-1 active">
+        header
+      </header>
+      <!-- main -->
+      <main>
+        <section class="section section-2 about">about</section>
+        <section class="section section-3 portfolio">portfolio</section>
+        <section class="section section-4 blogs">blogs</section>
+        <section class="section section-5 contact">contact</section>
+      </main>
+      <!-- buttons -->
+      <div class="controle-btns">
+        <button class="controle-1 active" type="button" data-section="home"><ion-icon name="home-outline"></ion-icon></button>
+        <button class="controle-3" type="button" data-section="about"><ion-icon name="person-outline"></ion-icon></button>
+        <button class="controle-2" type="button" data-section="portfolio"><ion-icon name="briefcase-outline"></ion-icon></button>
+        <button class="controle-4" type="button" data-section="blogs"><ion-icon name="newspaper-outline"></ion-icon></button>
+        <button class="controle-5" type="button" data-section="contact"><ion-icon name="mail-outline"></ion-icon></button>
+      </div>
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- ionicones -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <!-- js -->
+      <script type="text/javascript" src="./js/dynamic.js"> </script>
     </body>
 </html>
