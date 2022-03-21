@@ -2132,7 +2132,7 @@ progress {
 .overflow-auto {
   overflow: auto !important; }
 
-.overflow-hidden, .wave {
+.overflow-hidden, body {
   overflow: hidden !important; }
 
 .overflow-visible {
@@ -2189,7 +2189,7 @@ progress {
 .position-relative, body {
   position: relative !important; }
 
-.position-absolute, section, header, .wave {
+.position-absolute, section, header {
   position: absolute !important; }
 
 .position-fixed, .controle-btns {
@@ -2198,7 +2198,7 @@ progress {
 .position-sticky {
   position: sticky !important; }
 
-.top-0, section, header, .wave {
+.top-0, section, header {
   top: 0 !important; }
 
 .top-50, .controle-btns {
@@ -2216,7 +2216,7 @@ progress {
 .bottom-100 {
   bottom: 100% !important; }
 
-.start-0, section, header, .wave {
+.start-0, section, header {
   left: 0 !important; }
 
 .start-50 {
@@ -2324,7 +2324,7 @@ progress {
 .w-75 {
   width: 75% !important; }
 
-.w-100, section, header, .wave {
+.w-100, body, section, header {
   width: 100% !important; }
 
 .w-auto {
@@ -2357,7 +2357,7 @@ progress {
 .mh-100 {
   max-height: 100% !important; }
 
-.vh-100, .wave {
+.vh-100, body {
   height: 100vh !important; }
 
 .min-vh-100, section, header {
@@ -3095,7 +3095,7 @@ progress {
 .visible {
   visibility: visible !important; }
 
-.invisible, .wave-2, .wave-3, .wave-4, .wave-5, .wave-6, .wave-7, .wave-8, .wave-9, .wave-10 {
+.invisible, .wave-2, .wave-3, .wave-4, .wave-5, .wave-6, .wave-7, .wave-8, .wave-9, .wave-10, #wave-2 {
   visibility: hidden !important; }
 
 @media (min-width: 576px) {
@@ -5612,6 +5612,12 @@ progress {
     display: none !important; } }
 .transition, .section, .controle-1, .controle-2, .controle-3, .controle-4, .controle-5 {
   transition: all 0.4s ease-in-out; }
+
+body {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  background-image: url("../img/wave-1.svg"); }
 
 .section {
   transform: translateX(-100%); }
