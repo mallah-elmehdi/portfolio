@@ -2174,7 +2174,7 @@ progress {
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
-.shadow-sm {
+.shadow-sm, .controle-1, .controle-2, .controle-3, .controle-4, .controle-5 {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .shadow-lg {
@@ -2357,10 +2357,10 @@ progress {
 .mh-100 {
   max-height: 100% !important; }
 
-.vh-100, body {
+.vh-100, body, section, header {
   height: 100vh !important; }
 
-.min-vh-100, section, header {
+.min-vh-100 {
   min-height: 100vh !important; }
 
 .flex-fill {
@@ -3095,7 +3095,7 @@ progress {
 .visible {
   visibility: visible !important; }
 
-.invisible, .wave-2, .wave-3, .wave-4, .wave-5, .wave-6, .wave-7, .wave-8, .wave-9, .wave-10, #wave-2 {
+.invisible {
   visibility: hidden !important; }
 
 @media (min-width: 576px) {
