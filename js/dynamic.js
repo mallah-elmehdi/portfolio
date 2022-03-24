@@ -19,10 +19,4 @@ $(document).ready(function() {
         })
     }
   })
-  KUTE.fromTo(
-      '#wave-1',
-      { path: '#wave-1' },
-      { path: '#wave-2' },
-      { repeat: 999, duration: 3000, yoyo: true }
-  ).start();
 })
