@@ -4,13 +4,14 @@ import { alpha, createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#00D7BB',
+            main: '#2F4858',
+            light: '#107E92',
         },
         secondary: {
-            main: '#01F298',
+            main: '#00D7BB',
         },
         muted: {
-            main: '#313741',
+            main: '#E8F3F1',
         },
     },
     typography: {
@@ -61,9 +62,10 @@ const theme = createTheme({
 // ============== gradient
 
 theme.gradient = {
-    alpha75_1: `linear-gradient(45deg, ${alpha(theme.palette.secondary.main, 0.75)} 25%, ${alpha(theme.palette.primary.main, 0.75)} 100%)`,
-    alpha75_2: `linear-gradient(45deg, ${alpha(theme.palette.secondary.main, 1)} 0%, ${alpha(theme.palette.common.white, 0.75)} 70%)`,
-    secondaryDark: `linear-gradient(0deg, ${alpha(theme.palette.common.black, 0.75)} 0%, ${alpha(theme.palette.primary.main, 0)} 100%)`,
+    primary: `linear-gradient(180deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.light} 100%)`,
+    white: `linear-gradient(180deg, ${theme.palette.common.white} 0%, ${theme.palette.common.white} 100%)`,
+    darkAlpha: `linear-gradient(180deg, ${alpha('#000', 0.5)} 0%, ${alpha('#000', 0.75)} 100%)`,
+    darkAlpha2: `linear-gradient(180deg, ${alpha('#000', 0)} 0%, ${alpha('#000', 0.5)} 100%)`,
 };
 
 theme.palette.common.black = '#313741';

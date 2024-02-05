@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <Box
             sx={(theme) => ({
-                background: theme.palette.muted.main,
+                background: theme.palette.primary.main,
                 py: 5,
             })}
         >

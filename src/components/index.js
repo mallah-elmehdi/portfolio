@@ -9,3 +9,4 @@ export { default as Img } from './Img';
 export { default as Card } from './Card';
 export { default as ProjectCard } from './ProjectCard';
 export { default as Footer } from './Footer';
+export { default as GradientButton } from './GradientButton';

@@ -31,7 +31,7 @@ const Base = () => {
     return (
         <Box
             sx={(theme) => ({
-                backgroundColor: theme.palette.common.white,
+                backgroundColor: theme.palette.muted.main,
                 minHeight: '100vh',
                 minWidth: '100vw',
                 height: '100%',

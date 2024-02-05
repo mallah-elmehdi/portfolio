@@ -24,7 +24,6 @@ const Navbar = () => {
             position="fixed"
             sx={(theme) => ({
                 backgroundColor: sticky ? theme.palette.common.white : 'transparent',
-                // backgroundColor: theme.palette.common.white,
                 boxShadow: sticky ? theme.shadows.default : 'none',
                 transition: 'all .3s ease',
                 // position: '-webkit-sticky',

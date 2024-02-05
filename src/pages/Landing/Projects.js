@@ -18,14 +18,19 @@ const Projects = () => {
             }}
         >
             <Container sx={{ alignSelf: 'center' }}>
-                <Title>Projects I made</Title>
+                <Title
+                    label="projects"
+                    title1="Latest"
+                    title2="Projects"
+                    bold2
+                    sloganSize="xl"
+                    slogan="latest projects merges cutting-edge technology with unparalleled design, delivering a transformative experience that exceeds expectations"
+                />
 
-                <Grid container spacing={3} justifyContent="center">
+                <Grid container spacing={5} mt={5} justifyContent="center">
                     {PROJECTS.map((item) => (
                         <Grid item md={4} sm={6} xs={12}>
-                            <MuiLink underline="none" href={item.url} target="_blank">
-                                <ProjectCard {...item} />
-                            </MuiLink>
+                            <ProjectCard {...item} />
                         </Grid>
                     ))}
                 </Grid>

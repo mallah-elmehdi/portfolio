@@ -1,6 +1,6 @@
 export const NAVBAR_PAGES = [
     {
-        title: 'Projects I made',
+        title: 'Latest Project',
         id: 'projects-i-made',
     },
     // {
