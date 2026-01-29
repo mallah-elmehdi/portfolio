@@ -1,10 +1,9 @@
 import { HOME_OG_IMAGE_URL } from '@/lib/constants';
+import { mainFont } from '@/lib/fonts';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
 import '../styles/globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import { ChildrenType } from '@/types/common.type';
 
 export const metadata: Metadata = {
     title: {
@@ -17,11 +16,7 @@ export const metadata: Metadata = {
     },
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<ChildrenType>) {
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
@@ -36,9 +31,7 @@ export default function RootLayout({
                 <meta name="theme-color" content="#000" />
                 <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
             </head>
-            <body className={inter.className}>
-                <div className="min-h-screen">{children}</div>
-            </body>
+            <body className={mainFont.className}>{children}</body>
         </html>
     );
 }
