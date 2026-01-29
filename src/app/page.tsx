@@ -1,15 +1,17 @@
-import Hero from '@/components/features/Lading/Hero';
-import Navbar from '@/components/layout/Navbar';
+import ArticleCard from '@/components/features/Article/ArticleCard';
+import Container from '@/components/ui/Container';
 import { getAllPosts } from '@/lib/api/posts/actions';
 
 export default function Index() {
     const allPosts = getAllPosts();
-    const heroPost = allPosts[0];
-    const morePosts = allPosts.slice(1);
 
     return (
-        <main className="flex flex-col gap-5">
-            <Navbar />
+        <main>
+            <Container className="grid gap-5 grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+                {allPosts.slice(0, 3).map((post) => (
+                    <ArticleCard {...post} />
+                ))}
+            </Container>
         </main>
     );
 }

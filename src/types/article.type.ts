@@ -1,11 +1,14 @@
-import { type Author } from './author.type';
+export type AuthorType = {
+    name: string;
+    picture: string;
+};
 
-export type Post = {
+export type ArticleType = {
     slug: string;
     title: string;
     date: string;
     coverImage: string;
-    author: Author;
+    author: AuthorType;
     excerpt: string;
     ogImage: {
         url: string;
@@ -14,7 +17,7 @@ export type Post = {
     preview?: boolean;
 };
 
-export type PostParams = {
+export type ArticleParamsType = {
     params: Promise<{
         slug: string;
     }>;

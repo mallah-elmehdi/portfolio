@@ -5,13 +5,13 @@ import Container from '../ui/Container';
 
 export default function Navbar() {
     return (
-        <div className="bg-orange-100">
+        <header className="bg-orange-100 p-5 rounded-xl">
             <Container>
                 <nav className="flex items-center  gap-5 justify-between">
                     <Logo />
                     <div className="flex items-center  gap-5">
                         {NAVBAR_LIST.map(({ title, href, Icon }) => (
-                            <Link href={href}>
+                            <Link key={href} href={href}>
                                 <div className="flex items-center gap-2 text-sm">
                                     <Icon />
                                     <span className="text-xl">{title}</span>
@@ -21,6 +21,6 @@ export default function Navbar() {
                     </div>
                 </nav>
             </Container>
-        </div>
+        </header>
     );
 }

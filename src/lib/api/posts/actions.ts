@@ -1,4 +1,4 @@
-import { Post } from '@/types/post.type';
+import { type ArticleType } from '@/types/article.type';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
@@ -15,10 +15,10 @@ export function getPostBySlug(slug: string) {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
 
-    return { ...data, slug: realSlug, content } as Post;
+    return { ...data, slug: realSlug, content } as ArticleType;
 }
 
-export function getAllPosts(): Post[] {
+export function getAllPosts(): ArticleType[] {
     const slugs = getPostSlugs();
     const posts = slugs
         .map((slug) => getPostBySlug(slug))
