@@ -1,12 +1,14 @@
+import Footer from '@/components/layout/Footer';
 import { HOME_OG_IMAGE_URL } from '@/lib/constants';
 import { mainFont } from '@/lib/fonts';
-import type { Metadata } from 'next';
-import { type ChildrenType } from '@/types/common.type';
 import cn from 'classnames';
+import Header from '@/components/layout/Header';
+import Container from '@/components/ui/Container';
+
+import { type ChildrenType } from '@/types/common.type';
+import { type Metadata } from 'next';
 
 import '../styles/globals.css';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
     title: {
@@ -34,10 +36,11 @@ export default function RootLayout({ children }: Readonly<ChildrenType>) {
                 <meta name="theme-color" content="#000" />
                 <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
             </head>
-            <body className={cn(mainFont.className, 'flex flex-col gap-5 p-5 overflow-x-hidden')}>
-                <Navbar />
-                {children}
-                <Footer />
+            <body className={cn(mainFont.className)}>
+                <Container className="flex flex-col gap-5 p-5 overflow-x-hidden">
+                    {children}
+                    <Footer />
+                </Container>
             </body>
         </html>
     );

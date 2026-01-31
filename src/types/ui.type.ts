@@ -13,3 +13,8 @@ export type LogoType = {
 export type IconButtonType = ChildrenType & {
     color?: string;
 };
+
+export type SectionType = ChildrenType & {
+    title: string;
+    description: string;
+};

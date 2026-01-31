@@ -10,9 +10,9 @@ export default function ArticleCard({ coverImage, title, author, date, excerpt, 
             <ArticleCoverImage coverImage={coverImage} title={title} />
             <ArticleDate date={date} />
             <Link href={`/articles/${slug}`}>
-                <h2 className="text-lg">{title}</h2>
+                <h2 className="text-lg hover:underline">{title}</h2>
             </Link>
-            <p className="text-sm text-gray-600 font-extralight">{excerpt}</p>
+            <p className="text-sm text-gray-500 font-extralight">{excerpt}</p>
             <ArticleAuthor author={author} />
         </div>
     );
